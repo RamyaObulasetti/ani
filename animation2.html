@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .b1{
+            background-color:aqua;
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            animation-name: id;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 3;
+            position: absolute;
+            position: relative;
+            position: sticky;
+            border-radius: 100%;
+        }
+        .b2{
+        height: 200px;
+        width: 200px;
+        background-color:maroon;
+        transition-property: transform;
+        transition-duration: 10s;
+        transition-delay: 1s;
+        transition-timing-function:ease-in-out;
+        border-radius: 10px;
+    }
+    .b2:hover{
+        background-color:yellow;
+        transform:rotate(160deg);
+     }
+     .b3{
+        height: 200px;
+        width: 200px;
+        background-color:blue;
+        transition-property: transform;
+        transition-duration: 10s;
+        transition-delay: 1s;
+        transition-timing-function:ease-in-out;
+        border-radius: 90px;
+    }
+    .b3:hover{
+        background-color:deeppink;
+        transform:rotate(200deg);
+     }
+       @keyframes id{
+        0%{background-color:orchid;left: 0px; top:0px;}
+        75%{background-color: blue;left: 200px;top: 25px;}
+        25%{background-color: black;left:35px;top:40px}  
+        }
+    </style>
+</head>
+<body>
+    <div class="b1"></div><br><br>
+    <div class="b2"></div><br>
+    <div class="b3"></div>
+    
+</body>
+</html>
